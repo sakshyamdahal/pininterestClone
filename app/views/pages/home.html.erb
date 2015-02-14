@@ -1,12 +1,16 @@
-<div class="jumbotron">
-	<h1>Welcome to Pininterest clone.</h1>
-	<p>
-		This is the home page for pininterest clone. I hope you enjoy the pins here.
-		Thank you.
-	</p>
-	<p>
-		<%= link_to "Sign up!!", "#", class: "btn btn-primary btn-lg" %>
-	</p>
-</div>
+<% if user_signed_in? %>
+	<h1>You are logged in!!</h1>
+<% else %>
+	<div class="jumbotron">
+		<h1>Welcome to Pininterest clone.</h1>
+		<p>
+			This is the home page for pininterest clone. I hope you enjoy the pins here.
+			Thank you.
+		</p>
+		<p>
+			<%= link_to "Sign up!!", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		</p>
+	</div>
+<% end %>
 
 
