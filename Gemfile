@@ -11,7 +11,7 @@ group :production do
 end
 
 gem 'bootstrap-sass', '~> 3.3.3'
-
+gem "paperclip", "~> 4.2"
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
